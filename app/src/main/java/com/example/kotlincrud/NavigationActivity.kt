@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlincrud.auth.LoginActivity
+import com.example.kotlincrud.auth.SignupActivity
 import com.google.android.material.button.MaterialButton
 
 class NavigationActivity : AppCompatActivity() {
