@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/round_arrow_forward_24"
+        android:padding="15dp"
+        android:text="log in"
+        android:fontFamily="@font/manrope_semibold"
+        android:drawableTint="#6750A3"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/white"
+        android:padding="15dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:drawableRight="@drawable/round_arrow_forward_24"
+        android:text="sign up" />
+
+    </LinearLayout>
+</RelativeLayout>
