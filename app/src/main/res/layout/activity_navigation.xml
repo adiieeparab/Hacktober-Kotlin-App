@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:drawableRight="@drawable/round_arrow_forward_24"
         android:padding="15dp"
-        android:text="log in"
+        android:text="@string/log_in"
         android:fontFamily="@font/manrope_semibold"
         android:drawableTint="#6750A3"
         android:layout_marginBottom="20dp"/>

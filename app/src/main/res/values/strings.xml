@@ -2,4 +2,17 @@
     <string name="app_name">KotlinCRUD</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">HOME FRAGMENT</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="log_in">log in</string>
+    <string name="splash_screen">SPLASH SCREEN</string>
+    <string name="login">Login</string>
+    <string name="forget_password">forget password ?</string>
+    <string name="let_s_reset_your_password_with_a_magical_link">let\'s reset your password with a magical link</string>
+    <string name="send_magical_link">send magical link</string>
 </resources>
