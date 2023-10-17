@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
+import com.example.kotlincrud.DashboardActivity
 import com.example.kotlincrud.NavigationActivity
 import com.example.kotlincrud.R
+import com.example.kotlincrud.utils.SharedPrefsHelper
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
@@ -54,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(usernameTxt,passwordTxt).addOnCompleteListener(this){
             if(it.isSuccessful){
                 Toast.makeText(applicationContext, "Login Successful", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(applicationContext, DashboardActivity::class.java))
             }else{
                 Toast.makeText(applicationContext, "Bad Credentials", Toast.LENGTH_SHORT).show()
             }

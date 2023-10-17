@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
+import com.example.kotlincrud.utils.SharedPrefsHelper
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,13 @@ class MainActivity : AppCompatActivity() {
         )
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(applicationContext, NavigationActivity::class.java))
+
+            if (SharedPrefsHelper().getSharedPrefs(applicationContext)){
+                startActivity(Intent(applicationContext, DashboardActivity::class.java))
+            }else{
+                startActivity(Intent(applicationContext, NavigationActivity::class.java))
+            }
+
         },3000)
 
     }

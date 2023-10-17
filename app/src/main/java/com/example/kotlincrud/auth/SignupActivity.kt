@@ -1,12 +1,14 @@
 package com.example.kotlincrud.auth
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.kotlincrud.DashboardActivity
 import com.example.kotlincrud.R
+import com.example.kotlincrud.utils.SharedPrefsHelper
 import com.example.kotlincrud.utils.User
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
@@ -66,6 +68,7 @@ class SignupActivity : AppCompatActivity() {
                 if(it.isSuccessful){
                     val user = User(usernameTxt,emailTxt,nameTxt)
                     db.collection("users").document(user.username).set(user)
+                    SharedPrefsHelper().saveToSharedPrefs(applicationContext , user.username, true)
                     startActivity(Intent(applicationContext, DashboardActivity::class.java));
                     Toast.makeText(applicationContext,"Welcome",Toast.LENGTH_LONG).show()
                 }else{
