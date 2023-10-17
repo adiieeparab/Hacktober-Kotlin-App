@@ -13,6 +13,6 @@
         android:fontFamily="@font/manrope_semibold"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:text="HOME FRAGMENT" />
+        android:text="@string/home_fragment" />
 
 </RelativeLayout>
